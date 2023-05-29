@@ -10,7 +10,7 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-// GET UTC
+// GET UTC Test by RM
 app.MapGet("time/utc", () => Results.Ok(DateTime.UtcNow));
 
 await app.RunAsync();
